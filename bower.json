@@ -1,15 +1,32 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "Matthieu Schneider",
+  "description": "Matthieu Schneider Portfolio",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
-  "license": "MIT",
-  "private": true,
+  "homepage": "app/index.html",
+  "license": "none",
   "dependencies": {
     "angular": "1.2.x",
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
+    "jquery": "~2.1.1",
+    "snapjs": "2.0.0-rc1",
+    "modernizr": "2.8.3",
+    "angular-animate": "~1.2.x",
+    "angular-snap": "~1.6.0"
+  },
+  "authors": [
+    "Matthieu Schneider matthieu.snd@gmail.com"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "snapjs": "2.0.0-rc1"
   }
 }

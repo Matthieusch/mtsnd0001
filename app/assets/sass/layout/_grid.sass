@@ -1,0 +1,41 @@
+// ==================================================
+// Grid system
+// http://gridcalculator.dk/#/960/16/20/0
+// ==================================================
+
+// $susy: (columns: 6, column-width: 150px, gutters: 10px/150px, gutter-position: split, math: static, debug: (image: show-columns, color: rgba(red, .25)))
+$susy: (columns: 12, column-width: 75px, gutters: 10px/75px, gutter-position: split, math: static)
+// $susy: (columns: 6, column-width: 150px, gutters: 1/3, math: static)
+
+
+.box-inset
+  +container(960px)
+
+#main
+  @extend .clearfix
+  +span(6)
+  html.one-sidebar &
+    +span(4 last)
+
+#header-logo
+  +span(2 first)
+
+#sidebar
+  +span(2 first)
+
+#block-footer-bretagne-tourisme
+  +span(2 first)
+
+#block-footer-secondary-menu
+  +span(4 last)
+
+.node-type-prize, .page-gagne
+  #block-system-main
+    +span(4)
+    +pre(1)
+    +post(1)
+  .block-partner, .block-prize
+    +span(2)
+
+#game-contest, #-crtbr-winner-form
+  +span(2 first)
