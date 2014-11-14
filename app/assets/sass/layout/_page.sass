@@ -2,9 +2,35 @@
 // Page
 // ==================================================
 
+html *
+  +box-sizing(border-box)
+
 html
   height: 100%
 
 body
   height: 100%
   -ms-content-zooming: none
+
+.snap-drawer-left
+  background: #1d1d1d
+  li
+    +rem(font-size, 15px)
+    color: #fff
+    line-height: 50px
+    padding: 0 40px
+    text-transform: uppercase
+    &:first-child
+      +rem(font-size, 18px)
+      background: map-get($colors, red)
+      font-weight: 800
+      padding: 0 0 0 40px
+  a
+    border-bottom: 1px dashed #4c4c4c
+    color: #fff
+    display: block
+    line-height: 50px
+    text-decoration: none
+    &:hover, &:focus, &:active
+      color: map-get($colors, red)
+

@@ -86,3 +86,44 @@
       +opacity(0)
 
 +timer('.wrapper', 5, 250px, transparent, '10px solid #e84c3d')
+
+//Logo
+#logo-scene
+  +perspective(1000px)
+  height: 300px
+  margin: 25px auto 0
+  width: 300px
+
+.logo-container
+  +animation(rotate3d2 4s linear infinite)
+  +transform-style(preserve-3d)
+  position: absolute
+  width: inherit
+  height: inherit
+
+.logo-face
+  +border-radius(5px)
+  +transform(translate3d(0, 0, 75px))
+  +transition(0.5s ease)
+  background: map-get($colors, red)
+  height: 150px
+  left: 75px
+  position: absolute
+  top: 75px
+  width: 150px
+  & + .logo-face
+    +transform(translate3d(0, 0, -75px))
+    & + .logo-face
+      +transform(translate3d(75px, 0 , 0) rotateY(90deg))
+      & + .logo-face
+        +transform(translate3d(-75px, 0, 0) rotateY(-90deg))
+        & + .logo-face
+          +transform(translate3d(0, 75px, 0) rotateX(90deg))
+          & + .logo-face
+            +transform(translate3d(0, -75px, 0) rotateX(-90deg))
+
++keyframes(rotate3d2)
+  from
+    +transform(rotateY(0deg) rotateX(0deg))
+  to
+    +transform(rotateY(360deg) rotateX(360deg))

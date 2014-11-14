@@ -1,27 +1,20 @@
-// Big screen : >= 1280px
-// ==================================================
-+susy-breakpoint(1280px, 16)
-  .container
-    +container(1280px)
-
 // Big screen : >= 960px and < 1280px
 // ==================================================
-+susy-breakpoint(960px 1279px, 12)
-  .container
-    +container(960px)
++susy-breakpoint(970px 1169px, 10)
+  .box-inset.grid
+    +container(970px)
 
-  #block-header-main-menu
-    +span(8)
-
-  #main
-    +span(12)
-    html.one-sidebar &
-      +span(8 last)
+  #hobbies
+    +span(6 last)
+    > div:nth-child(4n+1)
+      margin-right: gutter() !important
+    > div:nth-child(3n+1)
+      margin-right: 0 !important
 
 // Tablet : >= 640px and < 960px
 // ==================================================
-+susy-breakpoint(640px 959px, 8)
-  .container
++susy-breakpoint(640px 969px, 7, 25px)
+  .box-inset.grid
     +container(640px)
 
   #block-header-main-menu

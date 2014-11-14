@@ -2,3 +2,72 @@
 // Home
 // ==================================================
 
+.home-1
+  +background-size(cover)
+  height: 900px
+  padding: 0
+  .box-inset
+    position: absolute
+    top: 0
+  h1,
+  h2
+    color: #fff
+
+#profiles
+  margin-top: 40px
+  text-align: center
+  li
+    display: inline-block
+    margin: 0 4px
+    a
+      display: block
+      line-height: 1em
+      height: 37px
+      width: 37px
+      &:before
+        +border-radius(20px)
+        +transition(all ease 0.5s)
+        border: 1px solid #afb1b8
+        color: #afb1b8
+        display: block
+        height: 35px
+        line-height: 35px
+        width: 35px
+      &:hover, &:focus, &:active
+        text-decoration: none
+        &:before
+          border-color: map-get($colors, red)
+          color: map-get($colors, red)
+
+#picture img
+  +border-radius(235px)
+  background: #f2f2f2
+  border: 15px solid #f2f2f2
+  left: 50%
+  margin: -235px 0 0 -235px
+  position: absolute
+
+.home-2
+  background: #fff
+  padding: 325px 0 100px
+
+#hobbies
+  > div:nth-child(4n+1)
+    margin-right: 0 !important
+  [class^="icon-"],
+  [class*=" icon-"]
+    +border-radius(50%)
+    +rem(line-height, gutter())
+    display: block
+    background: #f1f1f1
+    height: 140px
+    margin-bottom: 10px
+    padding-top: 40px
+    text-align: center
+    width: 100%
+    &:before,
+      +rem(font-size, (+span(1) / 2))
+      display: block
+
+#informations
+  overflow: hidden

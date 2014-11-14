@@ -3,5 +3,39 @@
 // ==================================================
 
 #snap-toggle
-  position: absolute
-  z-index: 2
+  +transition(transform 0.3s ease)
+  +rem(font-size, 18px)
+  background: map-get($colors, red)
+  color: #fff
+  cursor: pointer
+  left: 0
+  position: fixed
+  top: 0
+  z-index: 10
+  &:before
+    height: 50px
+    line-height: 50px
+    text-align: center
+    width: 50px
+  &.active
+    +transform(translate3d(265px, 0, 0))
+    &:before
+      content: "\f00d"
+
+a.btn
+  +border-radius(5px)
+  +rem(font-size, 14px)
+  +rem(line-height, 50px)
+  background: map-get($colors, red)
+  color: #fff
+  display: inline-block
+  font-weight: 900
+  padding: 0 25px
+  text-align: center
+  text-transform: uppercase
+  span:before
+    +rem(font-size, 18px)
+    margin-right: 10px
+  &:hover, &:focus, &:active
+    text-decoration: none
+

@@ -1,15 +1,60 @@
 // ==================================================
 // Grid system
-// http://gridcalculator.dk/#/960/16/20/0
+// http://gridcalculator.dk/#/1170/12/30/0
 // ==================================================
 
-// $susy: (columns: 6, column-width: 150px, gutters: 10px/150px, gutter-position: split, math: static, debug: (image: show-columns, color: rgba(red, .25)))
-$susy: (columns: 12, column-width: 75px, gutters: 10px/75px, gutter-position: split, math: static)
-// $susy: (columns: 6, column-width: 150px, gutters: 1/3, math: static)
+$susy: (columns: 12, column-width: 70px, gutters: 30px/70px, gutter-position: after, math: static, debug: (image: show-columns, color: rgba(red, .25)))
+//$susy: (columns: 12, column-width: 75px, gutters: 10px/75px, gutter-position: split, math: static)
 
 
-.box-inset
-  +container(960px)
+.box-inset.grid
+  +container(1170px)
+
+.gutter-before
+  margin-left: gutter()
+
+.gutter-after
+  margin-right: gutter()
+
+.pad-15
+  +pad(15px)
+
+.prefix-15
+  +prefix(15px)
+
+.suffix-15
+  +suffix(15px)
+
+@mixin span-width($size)
+  float: left
+  width: +span($size)
+  &.gutter-included
+    width: +span($size) + gutter()
+
+.span-1
+  +span-width(1)
+.span-2
+  +span-width(2)
+.span-3
+  +span-width(3)
+.span-4
+  +span-width(4)
+.span-5
+  +span-width(5)
+.span-6
+  +span-width(6)
+.span-7
+  +span-width(7)
+.span-8
+  +span-width(8)
+.span-9
+  +span-width(9)
+.span-10
+  +span-width(10)
+.span-11
+  +span-width(11)
+.span-12
+  +span-width(12)
 
 #main
   @extend .clearfix
