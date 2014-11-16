@@ -23,7 +23,7 @@ run(function($rootScope, $location, $anchorScroll, $routeParams, snapRemote){
   });
 }).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider.otherwise({redirectTo: '/accueil'});
 }]).
 config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
