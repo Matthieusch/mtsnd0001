@@ -25,15 +25,6 @@
 .clear-both
   clear: both
 
-.clearfix
-  &:before,
-  &:after
-    content: ""
-    display: table
-  &:after
-    clear: both
-  *zoom: 1
-
 .element-invisible
   display: none !important
 
@@ -42,10 +33,6 @@
 
 .highlighted
   color: map-get($colors, primary) !important
-
-.item-list
-  @extend .clearfix
-  clear: both
 
 .text-center
   text-align: center
@@ -70,6 +57,9 @@
 
 .mb-20
   margin-bottom: 20px
+
+.lightblue
+  background: map-get($colors, lightblue)
 
 // Placeholders
 // ==================================================

@@ -1,57 +1,131 @@
 <div ng-controller="HomeCtrl">
-  <div id="top" class="home-1 box-outset" style="background-image: url({{background.src}})">
-    <div class="box-inset">
-      <div id="logo-scene">
-        <div class="logo-container">
-          <div class="logo-face"><img src="assets/img/cube/1.png" width="150px" height="150px"/></div>
-          <div class="logo-face"><img src="assets/img/cube/2.png" width="150px" height="150px"/></div>
-          <div class="logo-face"><img src="assets/img/cube/3.png" width="150px" height="150px"/></div>
-          <div class="logo-face"><img src="assets/img/cube/4.png" width="150px" height="150px"/></div>
-          <div class="logo-face"><img src="assets/img/cube/5.png" width="150px" height="150px"/></div>
-          <div class="logo-face"><img src="assets/img/cube/6.png" width="150px" height="150px"/></div>
+  <div id="introduction" class="container-fluid" style="background-image: url({{background.src}})">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="logo-scene">
+          <div class="logo-container">
+            <div class="logo-face"><img src="assets/img/cube/1.png" width="150px" height="150px"/></div>
+            <div class="logo-face"><img src="assets/img/cube/2.png" width="150px" height="150px"/></div>
+            <div class="logo-face"><img src="assets/img/cube/3.png" width="150px" height="150px"/></div>
+            <div class="logo-face"><img src="assets/img/cube/4.png" width="150px" height="150px"/></div>
+            <div class="logo-face"><img src="assets/img/cube/5.png" width="150px" height="150px"/></div>
+            <div class="logo-face"><img src="assets/img/cube/6.png" width="150px" height="150px"/></div>
+          </div>
         </div>
+        <h1>{{settings.author.name}}</h1>
+        <h2>{{settings.author.job}}</h2>
+        <ul id="profiles">
+          <li ng-repeat="profile in settings.profiles">
+            <a href="{{profile.link}}" class="icon-{{profile.service}}"></a>
+          </li>
+        </ul>
       </div>
-      <h1>{{settings.author.name}}</h1>
-      <h2>{{settings.author.job}}</h2>
-      <ul id="profiles">
-        <li ng-repeat="profile in settings.profiles">
-          <a href="{{profile.link}}" class="icon-{{profile.service}}"></a>
-        </li>
-      </ul>
     </div>
-  </div>
-  <div id="picture">
-    <img ng-src="{{settings.author.picture}}" alt="{{settings.author.name}} - {{settings.author.job}}" width="470px" height="470px" />
-  </div>
-  <div id="about" class="home-2 box-outset">
-    <div class="box-inset grid">
-      <div class="pad-15">
-        <h2 class="underline-style">À propos</h2>
-        <p><strong>{{settings.author.headline}}</strong></p>
-        <p>{{settings.author.description}}</p>
-      </div>
-      <div class="span-4 gutter-included prefix-15 mt-20">
-        <div id="informations">
-          <div class="span-1 gutter-included mb-20"><b>Naissance</b></div>
-          <div class="span-2 gutter-included">: {{settings.author.birthday}}</div>
-          <div class="span-1 gutter-included clear-both mb-20"><b>Téléphone</b></div>
-          <div class="span-2 gutter-included">: {{settings.author.phone}}</div>
-          <div class="span-1 gutter-included clear-both mb-20"><b>Email</b></div>
-          <div class="span-2 gutter-included">: <a href="mailto:{{settings.author.email}}">{{settings.author.email}}</a></div>
-          <div class="span-1 gutter-included clear-both"><b>Adresse</b></div>
-          <div class="span-2 gutter-included">: {{settings.author.address}}</div>
-        </div>
-        <h4>{{settings.author.name}}</h4>
-        <a href="{{settings.author.resume}}" class="span-3 gutter-included btn" target="_blank">
-          <span class="icon-download-alt">Télécharger mon CV</span>
-        </a>
-      </div>
-      <div id="hobbies" class="span-8 mt-20">
-        <h3 class="pad-15">Loisirs et intérêts</h3>
-        <div class="span-2 gutter-after pad-15" ng-repeat="hobby in settings.hobbies">
-          <span class="span-2 icon-{{hobby.id}}">{{hobby.name}}</span>
-        </div>
+    <div class="row">
+      <div id="picture" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+        <img ng-src="{{settings.author.picture}}" alt="{{settings.author.name}} - {{settings.author.job}}" width="100%"/>
       </div>
     </div>
   </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="underline-style">À propos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-7 col-lg-12">
+          <p><strong>{{settings.author.headline}}</strong></p>
+          <p>{{settings.author.description}}</p>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-0 col-lg-4 mt-20">
+          <div id="informations">
+            <div class="row">
+              <div class="col-xs-4 mb-20"><b>Naissance</b></div>
+              <div class="col-xs-8">: {{settings.author.birthday}}</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 mb-20"><b>Téléphone</b></div>
+              <div class="col-xs-8">: {{settings.author.phone}}</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 mb-20"><b>Email</b></div>
+              <div class="col-xs-8">: <a href="mailto:{{settings.author.email}}">{{settings.author.email}}</a></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4"><b>Adresse</b></div>
+              <div class="col-xs-8">: {{settings.author.address}}</div>
+            </div>
+          </div>
+          <h5>{{settings.author.name}}</h5>
+          <a href="{{settings.author.resume}}" class="col-xs-12 col-md-10 btn" target="_blank">
+            <span class="icon-download-alt">Télécharger mon CV</span>
+          </a>
+        </div>
+        <div id="hobbies" class="col-xs-12 col-lg-8 clearfix visible-md-block mt-20">
+          <h3>Loisirs et intérêts</h3>
+          <div class="row">
+            <div class="col-xs-4 col-sm-3" ng-repeat="hobby in settings.hobbies">
+              <div class="square">
+                <div class="content">
+                  <div class="table">
+                    <span class="table-cell icon-{{hobby.id}}">{{hobby.name}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="resume" class="lightblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="underline-style">Parcours</h2>
+        </div>
+        <div class="col-xs-12">
+          <div id="line"></div>
+          <div id="experiences" class="row">
+            <div class="text-center">
+              <h4>Expériences</h4>
+            </div>
+            <div class="icon-folder-open"></div>
+            <div class="items-container col-md-10 col-md-offset-1">
+              <div class="item col-sm-6" ng-repeat="experience in resume.experiences">
+                <div class="row">
+                  <div class="item-content col-xs-12">
+                    <h6>{{experience.name}}</h6>
+                    <span>{{experience.employer}}</span><span>{{experience.dates}}</span>
+                    <ul>
+                      <li ng-repeat="function in experience.functions">{{function}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="education" class="row">
+            <div class="text-center">
+              <h4>Formations</h4>
+            </div>
+            <div class="icon-book"></div>
+            <div class="items-container col-md-10 col-md-offset-1">
+              <div class="item col-sm-6" ng-repeat="education in resume.educations">
+                <div class="row">
+                  <div class="item-content col-xs-12">
+                    <h6>{{education.name}}</h6>
+                    <span>{{education.school}}</span><span>{{education.dates}}</span>
+                    <ul>
+                      <li ng-repeat="function in education.functions">{{function}}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>

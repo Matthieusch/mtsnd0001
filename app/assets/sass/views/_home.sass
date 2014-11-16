@@ -2,10 +2,9 @@
 // Home
 // ==================================================
 
-.home-1
+#introduction
   +background-size(cover)
   height: 900px
-  padding: 0
   .box-inset
     position: absolute
     top: 0
@@ -40,34 +39,121 @@
           color: map-get($colors, red)
 
 #picture img
-  +border-radius(235px)
+  +border-radius(1000px)
   background: #f2f2f2
   border: 15px solid #f2f2f2
-  left: 50%
-  margin: -235px 0 0 -235px
-  position: absolute
+  margin: 50% 0 100px
 
-.home-2
+#about
   background: #fff
-  padding: 325px 0 100px
+  padding: 0 0 100px
 
 #hobbies
-  > div:nth-child(4n+1)
-    margin-right: 0 !important
+  .square
+    margin-bottom: 10px
+    overflow: hidden
+    padding-bottom: 100%
+    position: relative
+  .content
+    height: 100%
+    position: absolute
+    width: 100%
+  .table
+    display: table
+    height: 100%
+    width: 100%
   [class^="icon-"],
   [class*=" icon-"]
     +border-radius(50%)
-    +rem(line-height, gutter())
-    display: block
+    +rem(line-height, 30px)
     background: #f1f1f1
-    height: 140px
-    margin-bottom: 10px
-    padding-top: 40px
+    display: table-cell
+    height: 100%
     text-align: center
+    vertical-align: middle
     width: 100%
     &:before,
-      +rem(font-size, (+span(1) / 2))
+      +rem(font-size, 35px)
       display: block
 
 #informations
   overflow: hidden
+
+#resume
+  padding: 150px 0
+  #line
+    background: map-get($colors, midblue)
+    height: 100%
+    left: 50%
+    margin-left: -1.5px
+    position: absolute
+    text-align: center
+    width: 3px
+    &:after
+      +border-radius(20px)
+      +rem(font-size, 18px)
+      +rem(line-height, 40px)
+      background: map-get($colors, midblue)
+      bottom: -20px
+      color: map-get($colors, blue)
+      content: "\f02e"
+      display: block
+      font-family: FontAwesome
+      font-weight: normal
+      font-style: normal
+      height: 40px
+      left: 50%
+      margin-left: -20px
+      position: absolute
+      text-decoration: inherit
+      width: 40px
+  #experiences,
+  #education
+    position: relative
+    z-index: 4
+  .icon-folder-open,
+  .icon-book
+    position: relative
+    z-index: 4
+    &:before
+      +border-radius(20px)
+      +rem(font-size, 18px)
+      +rem(line-height, 40px)
+      background: map-get($colors, red)
+      color: #fff
+      display: block
+      height: 40px
+      margin: 0 auto 25px
+      width: 40px
+      text-align: center
+  .icon-book:before
+    background: map-get($colors, green)
+  .items-container
+    span
+      +rem(font-size, 18px)
+      +rem(line-height, 18px)
+      color: map-get($colors, blue)
+      display: inline-block
+      font-weight: 600
+      margin-bottom: 15px
+      & + span:before
+        +border-radius(3px)
+        background: map-get($colors, red)
+        content: ""
+        display: inline-block
+        height: 5px
+        margin: 0 10px
+        vertical-align: middle
+        width: 5px
+  .item
+    margin-bottom: 40px
+    padding: 0 30px
+    position: relative
+    .item-content
+      +border-radius(5px)
+      padding: 15px
+      background: #fff
+  #education
+    .items-container span + span:before
+      background: map-get($colors, green)
+

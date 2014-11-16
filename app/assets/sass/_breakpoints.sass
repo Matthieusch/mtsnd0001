@@ -1,40 +1,67 @@
-// Big screen : >= 960px and < 1280px
+// Small screen / tablet : > 768px
 // ==================================================
-+susy-breakpoint(970px 1169px, 10)
-  .box-inset.grid
-    +container(970px)
++breakpoint($screen-sm-min)
+  h1
+    +rem(font-size, 70px)
+  #picture img
+    margin-top: 30%
+  #resume
+    .item
+      text-align: right
+      .item-content
+        +border-radius(5px)
+        +transition(background ease 0.5s)
+        background: transparent
+        cursor: pointer
+        padding: 15px
+        &:after,
+        &:before
+          +transition(background ease 0.5s)
+          +border-radius(8px)
+          background: map-get($colors, midblue)
+          content: ""
+          cursor: pointer
+          display: block
+          height: 15px
+          position: absolute
+          top: 15px
+          width: 15px
+        &:after
+          right: -23px
+        &:before
+          content: none
+        &:hover, &:hover, &:active
+          background: #fff
+          &:after,
+          &:before
+            background: map-get($colors, red)
+      &:nth-child(2n+0)
+        margin-top: 90px
+        text-align: left
+        .item-content:after
+          content: none
+        .item-content:before
+          content: ""
+          left: -22px
+      &:nth-child(2n+1)
+        clear: both
+    #education
+      .item .item-content
+        &:hover, &:hover, &:active
+          &:after,
+          &:before
+            background: map-get($colors, green)
 
-  #hobbies
-    +span(6 last)
-    > div:nth-child(4n+1)
-      margin-right: gutter() !important
-    > div:nth-child(3n+1)
-      margin-right: 0 !important
-
-// Tablet : >= 640px and < 960px
+// Medium screen / desktop : > 992px
 // ==================================================
-+susy-breakpoint(640px 969px, 7, 25px)
-  .box-inset.grid
-    +container(640px)
++breakpoint($screen-md-min)
+  h1
+    +rem(font-size, 90px)
+  #picture img
+    margin-top: 10%
 
-  #block-header-main-menu
-    +span(4)
-
-  #main
-    +span(4)
-    html.one-sidebar &
-      +span(4 last)
-
-// Mobile : < 640px
+// Large screen / wide desktop : > 1200px
 // ==================================================
-+susy-breakpoint(320px 639px, 4)
-  .container
-    +container(320px)
-
-  #main
-    +span(4)
-    html.one-sidebar &
-      +span(4)
-
-  #sidebar
-    +span(4)
++breakpoint($screen-lg-min)
+  #picture img
+    margin-top: 5%

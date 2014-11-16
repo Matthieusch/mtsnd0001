@@ -11,6 +11,5 @@ line_comments = true
 output_style = :compressed
 
 # Require any additional compass plugins here.
-require 'susy'
 require 'breakpoint'
 require 'animation'
