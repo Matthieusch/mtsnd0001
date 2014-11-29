@@ -7,8 +7,7 @@ angular.module('app', [
   'snap',
   'duScroll',
   'app.home',
-  'app.directive',
-  'app.view2'
+  'app.directive'
 ]).
 value('duScrollEasing', invertedEasingFunction).
 run(function($rootScope, $location, $routeParams, snapRemote){
@@ -22,9 +21,11 @@ run(function($rootScope, $location, $routeParams, snapRemote){
   });
 }).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $routeProvider.otherwise({redirectTo: '/:anchor'});
+  $routeProvider.when('/', {templateUrl: 'partials/home.html',controller: 'HomeCtrl'});
+  $routeProvider.when('/page/:page', {templateUrl: 'partials/page.html',controller: 'GreatStuffCtrl'});
+  $routeProvider.otherwise({redirectTo: '#!/:anchor'});
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true).hashPrefix('!');
 }]).
 config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {

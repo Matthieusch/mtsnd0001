@@ -16,7 +16,7 @@ angular.module('app.home', [
 
   // Récupératon des informations générales
   $scope.settings = [];
-  $http.get('services/settings.json').success(function(data){
+  $http.get('js/services/settings.json').success(function(data){
     // console.log('Success Settings: ' + data);
     $scope.settings = data;
 
@@ -28,7 +28,7 @@ angular.module('app.home', [
 
   // Récupératon des backgrounds
   $scope.backgrounds = [];
-  $http.get('services/backgrounds.json').success(function(data){
+  $http.get('js/services/backgrounds.json').success(function(data){
     // console.log('Success Backgrounds: ' + data);
     $scope.backgrounds = data;
 
@@ -40,7 +40,7 @@ angular.module('app.home', [
 
   // Récupératon des informations du CV
   $scope.resume = [];
-  $http.get('services/resume.json').success(function(data){
+  $http.get('js/services/resume.json').success(function(data){
     // console.log('Success Resume: ' + data);
     $scope.resume = data;
   }).
