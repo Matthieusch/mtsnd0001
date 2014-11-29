@@ -1,0 +1,59 @@
+{
+  "author": {
+    "name": "Matthieu Schneider",
+    "job": "Senior Front-End Web Developer",
+    "picture": "files/matthieu-schneider_front-end-web-developer.jpg",
+    "resume": "files/matthieu-schneider_front-end-web-developer.pdf",
+    "headline": "Efficace, plein d’entrain et toujours de bonne humeur. Je m’applique à ce que mon espace de travail et mes relations avec mes collaborateurs soient agréables et vitaminés tout en restant professionnels.",
+    "description": "Doté d’une expérience de 5 années consécutives dans l’intégration et le développement web. Aujourd’hui, mes aspirations se tournent vers des missions ou mes compétences seront valorisées à travers des projets innovants et ambitieux où partage de connaissances et accompagnement au changement rythment mes journées.",
+    "birthday": "27/02/1998",
+    "phone": "+33 6 45 79 09 99",
+    "email": "matthieu.snd@gmail.com",
+    "address": "Rennes - FRANCE"
+  },
+  "profiles" : [
+    {
+      "link": "https://twitter.com/Matthieusch",
+      "service": "twitter"
+    },
+    {
+      "link": "fr.linkedin.com/in/matthieusch/",
+      "service": "linkedin"
+    }
+  ],
+  "hobbies" : [
+    {
+      "id": "cycle",
+      "name": "Pignon fixe"
+    },
+    {
+      "id": "coffe",
+      "name": "Café"
+    },
+    {
+      "id": "gamepad",
+      "name": "Jeux vidéos"
+    },
+    {
+      "id": "facetime-video",
+      "name": "Cinéma"
+    },
+    {
+      "id": "headphones",
+      "name": "Musique"
+    },
+    {
+      "id": "apple",
+      "name": "Mac OS"
+    },
+    {
+      "id": "rocket",
+      "name": "Astronomie"
+    },
+    {
+      "id": "beer",
+      "name": "Bière"
+    }
+  ],
+  "map" : "https://mapbuildr.com/buildr/bd5zav"
+}

@@ -5,14 +5,13 @@ angular.module('app', [
   'ngRoute',
   'ngAnimate',
   'snap',
+  'duScroll',
   'app.home',
+  'app.directive',
   'app.view2'
 ]).
-run(function($rootScope, $location, $anchorScroll, $routeParams, snapRemote){
-  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
-    $location.hash($routeParams.scrollTo);
-    $anchorScroll();
-  });
+value('duScrollEasing', invertedEasingFunction).
+run(function($rootScope, $location, $routeParams, snapRemote){
   snapRemote.getSnapper().then(function(snapper) {
     snapper.on('close', function(){
       angular.element(document.querySelector('#snap-toggle')).removeClass('active');
@@ -22,8 +21,10 @@ run(function($rootScope, $location, $anchorScroll, $routeParams, snapRemote){
     });
   });
 }).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/accueil'});
+config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $routeProvider.otherwise({redirectTo: '/:anchor'});
+
+  $locationProvider.html5Mode(true);
 }]).
 config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
@@ -33,3 +34,8 @@ config(function(snapRemoteProvider) {
     minPosition: -265
   };
 });
+
+// Functions
+function invertedEasingFunction(t) {
+  return t<0.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t;
+}

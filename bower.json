@@ -13,7 +13,8 @@
     "snapjs": "2.0.0-rc1",
     "modernizr": "2.8.3",
     "angular-animate": "~1.2.x",
-    "angular-snap": "~1.6.0"
+    "angular-snap": "~1.6.0",
+    "angular-scroll": "~0.6.2"
   },
   "authors": [
     "Matthieu Schneider matthieu.snd@gmail.com"

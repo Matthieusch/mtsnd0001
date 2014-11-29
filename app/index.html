@@ -6,8 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Matthieu Schneider - Front-end web developer</title>
-  <meta name="description" content="">
+  <title>Matthieu Schneider - Front-end web developer2</title>
+  <meta name="description" content="Matthieu Schneider, Front-end Web Developer basé à Rennes. En recherche de missions ou mes compétences seront valorisées à travers des projets innovants et ambitieux où partage de connaissances et accompagnement au changement rythment mes journées.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="bower_components/angular-snap/angular-snap.min.css" />
@@ -17,21 +17,12 @@
 </head>
 <body>
 
-  <div id="snap-toggle" snap-toggle="left" class="btn icon-navicon"></div>
-
-  <snap-drawer>
-    <ul id="menu">
-      <li>Menu</li>
-      <li><a href="#/accueil?scrollTo=introduction">Accueil</a></li>
-      <li><a href="#/accueil?scrollTo=about">À propos</a></li>
-      <li><a href="#/accueil?scrollTo=resume">Parcours</a></li>
-    </ul>
-  </snap-drawer>
+  <div header></div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <snap-content>
+  <snap-content id="container" du-scroll-container>
     <div class="view-animate-container">
       <div ng-view class="view-animate"></div>
     </div>
@@ -46,8 +37,11 @@
   <script src="bower_components/angular-loader/angular-loader.min.js"></script>
   <script src="bower_components/snapjs/src/snap.js"></script>
   <script src="bower_components/angular-snap/angular-snap.min.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="app.js"></script>
+  <script src="directive.js"></script>
+  <script src="home/home-directive.js"></script>
   <script src="home/home.js"></script>
   <script src="view2/view2.js"></script>
 </body>

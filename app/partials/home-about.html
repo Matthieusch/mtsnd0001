@@ -1,0 +1,53 @@
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="underline-style">À propos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-7 col-lg-12">
+        <p><strong>{{settings.author.headline}}</strong></p>
+        <p>{{settings.author.description}}</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0 col-lg-4 mt-20">
+        <div id="informations">
+          <div class="row">
+            <div class="col-xs-4 mb-20"><b>Naissance</b></div>
+            <div class="col-xs-8">: {{settings.author.birthday}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 mb-20"><b>Téléphone</b></div>
+            <div class="col-xs-8">: {{settings.author.phone}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 mb-20"><b>Email</b></div>
+            <div class="col-xs-8">: <a href="mailto:{{settings.author.email}}">{{settings.author.email}}</a></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4"><b>Adresse</b></div>
+            <div class="col-xs-8">: {{settings.author.address}}</div>
+          </div>
+        </div>
+        <h5>{{settings.author.name}}</h5>
+        <a href="{{settings.author.resume}}" class="col-xs-12 col-md-10 btn" target="_blank">
+          <span class="icon-download-alt">Curriculum Vitae</span>
+        </a>
+      </div>
+      <div id="hobbies" class="col-xs-12 col-lg-8 clearfix visible-md-block mt-20">
+        <h3>Loisirs et intérêts</h3>
+        <div class="row">
+          <div class="col-xs-4 col-sm-3" ng-repeat="hobby in settings.hobbies">
+            <div class="square">
+              <div class="content">
+                <div class="table">
+                  <span class="table-cell icon-{{hobby.id}}">{{hobby.name}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

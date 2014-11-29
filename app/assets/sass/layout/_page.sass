@@ -26,11 +26,15 @@ body
       font-weight: 800
       padding: 0 0 0 40px
   a
+    +transition(color ease 0.5s)
     border-bottom: 1px dashed #4c4c4c
     color: #fff
     display: block
     line-height: 50px
     text-decoration: none
-    &:hover, &:focus, &:active
+    &:hover, &:focus, &:active, &.active
       color: map-get($colors, red)
 
+#footer
+  +rem(font-size, 15px)
+  padding: 100px 15px

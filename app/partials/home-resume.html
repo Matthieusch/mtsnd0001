@@ -1,0 +1,50 @@
+<div id="resume" class="lightblue">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="underline-style">Parcours</h2>
+      </div>
+      <div class="col-xs-12">
+        <div id="line"></div>
+        <div id="experiences" class="row">
+          <div class="text-center">
+            <h4>Expériences</h4>
+          </div>
+          <div class="icon-folder-open"></div>
+          <div class="items-container col-md-10 col-md-offset-1">
+            <div class="item col-sm-6" ng-repeat="experience in resume.experiences">
+              <div class="row">
+                <div class="item-content col-xs-12">
+                  <h6>{{experience.name}}</h6>
+                  <span>{{experience.employer}}</span><span>{{experience.dates}}</span>
+                  <ul>
+                    <li ng-repeat="function in experience.functions">{{function}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="education" class="row">
+          <div class="text-center">
+            <h4>Formations</h4>
+          </div>
+          <div class="icon-book"></div>
+          <div class="items-container col-md-10 col-md-offset-1">
+            <div class="item col-sm-6" ng-repeat="education in resume.educations">
+              <div class="row">
+                <div class="item-content col-xs-12">
+                  <h6>{{education.name}}</h6>
+                  <span>{{education.school}}</span><span>{{education.dates}}</span>
+                  <ul>
+                    <li ng-repeat="function in education.functions">{{function}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

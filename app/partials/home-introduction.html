@@ -1,0 +1,28 @@
+<div id="introduction" class="container-fluid" style="background-image: url({{background.src}})">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="logo-scene">
+        <div class="logo-container">
+          <div class="logo-face"><img src="assets/img/cube/1.png" width="150px" height="150px"/></div>
+          <div class="logo-face"><img src="assets/img/cube/2.png" width="150px" height="150px"/></div>
+          <div class="logo-face"><img src="assets/img/cube/3.png" width="150px" height="150px"/></div>
+          <div class="logo-face"><img src="assets/img/cube/4.png" width="150px" height="150px"/></div>
+          <div class="logo-face"><img src="assets/img/cube/5.png" width="150px" height="150px"/></div>
+          <div class="logo-face"><img src="assets/img/cube/6.png" width="150px" height="150px"/></div>
+        </div>
+      </div>
+      <h1>{{settings.author.name}}</h1>
+      <h2>{{settings.author.job}}</h2>
+      <ul id="profiles">
+        <li ng-repeat="profile in settings.profiles">
+          <a href="{{profile.link}}" class="icon-{{profile.service}}"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div id="picture" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+      <img ng-src="{{settings.author.picture}}" alt="{{settings.author.name}} - {{settings.author.job}}" width="100%"/>
+    </div>
+  </div>
+</div>
