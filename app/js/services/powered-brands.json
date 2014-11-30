@@ -1,0 +1,56 @@
+[
+  {
+    "name" : "AngularJS",
+    "description" : "HTML enhanced for web apps!",
+    "link" : "https://angularjs.org/",
+    "logo" : "/files/powered-brands/angular.jpg"
+  },
+  {
+    "name" : "Bower",
+    "description" : "A package manager for the web",
+    "link" : "http://bower.io/",
+    "logo" : "/files/powered-brands/bower.jpg"
+  },
+  {
+    "name" : "Bundler",
+    "description" : "The best way to manage your application's dependencies",
+    "link" : "http://bundler.io/",
+    "logo" : "/files/powered-brands/bundler.jpg"
+  },
+  {
+    "name" : "compass",
+    "description" : "Compass is an open-source CSS Authoring Framework.",
+    "link" : "http://compass-style.org/",
+    "logo" : "/files/powered-brands/compass.jpg"
+  },
+  {
+    "name" : "git",
+    "description" : "--distributed-even-if-your-workflow-isnt",
+    "link" : "http://git-scm.com/",
+    "logo" : "/files/powered-brands/git.jpg"
+  },
+  {
+    "name" : "github",
+    "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers.",
+    "link" : "https://github.com/",
+    "logo" : "/files/powered-brands/github.jpg"
+  },
+  {
+    "name" : "nodejs",
+    "description" : "Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.",
+    "link" : "http://nodejs.org/",
+    "logo" : "/files/powered-brands/nodejs.jpg"
+  },
+  {
+    "name" : "npm",
+    "description" : "Node Packaged Modules",
+    "link" : "https://www.npmjs.org/",
+    "logo" : "/files/powered-brands/npm.jpg"
+  },
+  {
+    "name" : "Sass",
+    "description" : "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
+    "link" : "http://sass-lang.com/",
+    "logo" : "/files/powered-brands/sass.jpg"
+  }
+]

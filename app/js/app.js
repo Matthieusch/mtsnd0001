@@ -6,8 +6,9 @@ angular.module('app', [
   'ngAnimate',
   'snap',
   'duScroll',
-  'app.home',
-  'app.directive'
+  'app.controllers.home',
+  'app.directive',
+  'app.controllers.greatstuff'
 ]).
 value('duScrollEasing', invertedEasingFunction).
 run(function($rootScope, $location, $routeParams, snapRemote){
@@ -21,11 +22,11 @@ run(function($rootScope, $location, $routeParams, snapRemote){
   });
 }).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $routeProvider.when('/', {templateUrl: 'partials/home.html',controller: 'HomeCtrl'});
-  $routeProvider.when('/page/:page', {templateUrl: 'partials/page.html',controller: 'GreatStuffCtrl'});
-  $routeProvider.otherwise({redirectTo: '#!/:anchor'});
-
   $locationProvider.html5Mode(true).hashPrefix('!');
+
+  $routeProvider.when('/', {templateUrl: '/partials/home.html', controller: 'HomeCtrl'});
+  $routeProvider.when('/page/other-great-stuff', {templateUrl: '/partials/page.html', controller: 'GreatStuffCtrl'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]).
 config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
@@ -39,4 +40,22 @@ config(function(snapRemoteProvider) {
 // Functions
 function invertedEasingFunction(t) {
   return t<0.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t;
+}
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }

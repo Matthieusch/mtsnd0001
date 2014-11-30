@@ -32,6 +32,20 @@ h1
   margin: 30px 0 0
   text-align: center
   text-transform: uppercase
+  &.underline-style
+    +rem(font-size, 60px)
+    color: #fff
+    margin: 0
+    position: relative
+    &:after
+      background-color: #fff
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      margin: 30px -30px
+      position: absolute
+      width: 60px
 h2
   @extend .clear-both
   +rem(font-size, 33px)

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 bloc-container" ng-repeat="brand in brands">
+      <a href="{{brand.link}}" title="{{brand.name}}" class="bloc">
+        <img ng-src="{{brand.logo}}" width="100%" />
+        <h3>{{brand.name}}</h3>
+        <p>{{brand.description}}</p>
+      </a>
+    </div>
+  </div>
+</div>

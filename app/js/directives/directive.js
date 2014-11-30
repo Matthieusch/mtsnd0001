@@ -6,7 +6,7 @@ angular.module('app.directive', [])
   return {
       restrict: 'A',
       // replace: true,
-      templateUrl: "partials/header.html",
+      templateUrl: "/partials/header.html",
       controller: ['$scope', function ($scope) {
         // Todo
       }]
@@ -16,7 +16,7 @@ angular.module('app.directive', [])
   return {
       restrict: 'A',
       replace: true,
-      templateUrl: "partials/footer.html",
+      templateUrl: "/partials/footer.html",
       controller: ['$scope', function ($scope) {
         var date = new Date();
         $scope.date = date.getFullYear();
