@@ -7,7 +7,7 @@ angular.module('app.controllers.greatstuff', [])
   // Récupératon des marques
   $scope.brands = [];
   $http.get('/js/services/powered-brands.json').success(function(data){
-    console.log('Success brands: ' + data);
+    // console.log('Success brands: ' + data);
     $scope.brands = shuffle(data);
 
   }).

@@ -6,6 +6,7 @@ angular.module('app', [
   'ngAnimate',
   'snap',
   'duScroll',
+  'easypiechart',
   'app.controllers.home',
   'app.directive',
   'app.controllers.greatstuff'

@@ -3,6 +3,8 @@
 +breakpoint($screen-sm-min)
   h1
     +rem(font-size, 70px)
+  h2.underline-style
+    +rem(font-size, 60px)
   #picture img
     margin-top: 30%
   #resume
@@ -62,9 +64,35 @@
     +rem(font-size, 90px)
   #picture img
     margin-top: 10%
+  #services
+    .item
+      text-align: right
+      padding: 0 35px 0 15px
+      .item-content
+        padding: 0 120px 0 0
+        &:before
+          +rem(font-size, 40px)
+          +border-radius(5px)
+          color: #fff
+          background: map-get($colors, red)
+          left: auto
+          margin-left: 0
+          right: 35px
+      &:nth-child(2n+0)
+        padding: 0 15px 0 35px
+        text-align: left
+        .item-content
+          padding: 0 0 0 120px
+          &:before
+            left: 35px
+            right: auto
+      &:nth-child(2n+1)
+        clear: both
 
 // Large screen / wide desktop : > 1200px
 // ==================================================
 +breakpoint($screen-lg-min)
   #picture img
     margin-top: 5%
+  #about p
+    text-align: left

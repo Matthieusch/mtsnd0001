@@ -1,0 +1,32 @@
+[
+  {
+    "title" : "Conseils",
+    "description" : "Expression des besoins, réflexion et analyse, définition du périmètre du site et création de l'arborescence",
+    "icon" : "cogs"
+  },
+  {
+    "title" : "Développement",
+    "description" : "Développement informatique, contrôle et validation du site et intégration de l'ensemble du contenu",
+    "icon" : "flask"
+  },
+  {
+    "title" : "Tests",
+    "description" : "Tests sur environnements informatiques et navigateurs et corrections",
+    "icon" : "bug"
+  },
+  {
+    "title" : "Mise en ligne",
+    "description" : "Gestion des noms de domaines, de l'hébergement et mise en ligne du site",
+    "icon" : "rocket"
+  },
+  {
+    "title" : "Satistiques",
+    "description" : "Mise en place d'un outil de statistiques accessible et consultable en temps réel",
+    "icon" : "area-chart"
+  },
+  {
+    "title" : "Support",
+    "description" : "Une question ? Un problème ? Une envie ? Je reste à votre disposition",
+    "icon" : "life-ring"
+  }
+]

@@ -40,4 +40,37 @@ angular.module('app.controllers.home', [
     console.log('Error Resume: ' + headers);
   });
 
+  // Récupératon des services
+  $scope.services = [];
+  $http.get('/js/services/my-services.json').success(function(data){
+    // console.log('Success services: ' + data);
+    $scope.services = data;
+
+  }).
+  error(function(data, status, headers, config) {
+    console.log('Error services: ' + data);
+  });
+
+  // Récupératon des skills
+  $scope.skills = [];
+  $http.get('/js/services/skills.json').success(function(data){
+    // console.log('Success skills: ' + data);
+    $scope.skills = data;
+    $scope.skills.options = {
+      animate: {
+        duration: 1500,
+        enabled: true
+      },
+      barColor: '#e74c3c',
+      scaleColor: false,
+      lineWidth: 15,
+      size: 170,
+      trackColor: '#e6e8ed',
+      lineCap: 'circle'
+    };
+  }).
+  error(function(data, status, headers, config) {
+    console.log('Error skills: ' + data);
+  });
+
 }]);

@@ -1,0 +1,18 @@
+<div id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="underline-style">Services</h2>
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="item col-sm-6" ng-repeat="service in services">
+            <div class="item-content icon-{{service.icon}}">
+              <h6>{{service.title}}</h6>
+              <p>{{service.description}}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

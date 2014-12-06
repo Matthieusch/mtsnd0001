@@ -23,6 +23,20 @@ angular.module('app.home.home-directive', [])
     templateUrl: 'partials/home-resume.html'
   };
 })
+.directive('services', function() {
+  return {
+    restrict: 'A',
+    replace: true,
+    templateUrl: 'partials/home-services.html'
+  };
+})
+.directive('skills', function() {
+  return {
+    restrict: 'A',
+    replace: true,
+    templateUrl: 'partials/home-skills.html'
+  };
+})
 .directive('map', function() {
   return {
     restrict: 'A',

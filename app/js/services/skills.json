@@ -1,0 +1,42 @@
+[
+  {
+    "name" : "PHP",
+    "percent" : 72,
+    "description" : "On le concidére comme le cerveau du site internet"
+  },
+  {
+    "name" : "WordPress",
+    "percent" : 83,
+    "description" : "Coordonne le cerveau et facilite la gestion des données"
+  },
+  {
+    "name" : "Drupal",
+    "percent" : 80,
+    "description" : "Un moyen plus complet de coordonner le cerveau"
+  },
+  {
+    "name" : "JavaScript",
+    "percent" : 74,
+    "description" : "Les nerfs du site qui le font réagir en temps réel"
+  },
+  {
+    "name" : "AngularJS",
+    "percent" : 71,
+    "description" : "Coordonne l'architecture des nerfs pour les rendre plus réactifs"
+  },
+  {
+    "name" : "HTML/CSS",
+    "percent" : 87,
+    "description" : "L'apparence générale du site, et la façon dont il réagit"
+  },
+  {
+    "name" : "compass & Sass",
+    "percent" : 85,
+    "description" : "Coordonne l'apparence ainsi que les réactions du site"
+  },
+  {
+    "name" : "Git",
+    "percent" : 75,
+    "description" : "La mémoire du site, elle contient toutes les sauvegardes"
+  }
+]

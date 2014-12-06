@@ -46,6 +46,8 @@
 #about
   background: #fff
   padding: 0 0 100px
+  p
+    text-align: justify
 
 #hobbies
   .square
@@ -91,7 +93,6 @@
     &:after
       +border-radius(20px)
       +rem(font-size, 18px)
-      +rem(line-height, 40px)
       background: map-get($colors, midblue)
       bottom: -20px
       color: map-get($colors, blue)
@@ -102,6 +103,7 @@
       font-style: normal
       height: 40px
       left: 50%
+      line-height: 40px
       margin-left: -20px
       position: absolute
       text-decoration: inherit
@@ -117,11 +119,11 @@
     &:before
       +border-radius(20px)
       +rem(font-size, 18px)
-      +rem(line-height, 40px)
       background: map-get($colors, red)
       color: #fff
       display: block
       height: 40px
+      line-height: 40px
       margin: 0 auto 25px
       width: 40px
       text-align: center
@@ -156,6 +158,51 @@
     .items-container span + span:before
       background: map-get($colors, green)
 
+#services
+  background: #fff
+  padding: 150px 0
+  .item
+    text-align: center
+    margin-bottom: 50px
+    min-height: 80px
+    padding-top: 105px
+    position: relative
+    .item-content
+      display: block
+      &:before
+        +rem(font-size, 60px)
+        color: map-get($colors, red)
+        display: block
+        height: 80px
+        line-height: 80px
+        position: absolute
+        left: 50%
+        margin-left: -40px
+        text-align: center
+        top: 0
+        width: 80px
+    h6
+      margin-bottom: 5px
+    p
+      margin: 0
+
+#skills
+  padding: 150px 0 115px
+  text-align: center
+  .item
+    margin-bottom: 35px
+    div
+      position: relative
+      span
+        +rem(font-size, 50px)
+        color: #a0a4a9
+        display: block
+        line-height: 170px
+        position: absolute
+        width: 100%
+  h6
+    margin-top: 20px
+
 #map
   height: 470px
   overflow: hidden
@@ -166,4 +213,3 @@
     margin-left: -2500px
     position: absolute
     top: 0
-
