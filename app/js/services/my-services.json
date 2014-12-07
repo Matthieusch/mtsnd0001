@@ -6,27 +6,27 @@
   },
   {
     "title" : "Développement",
-    "description" : "Développement informatique, contrôle et validation du site et intégration de l'ensemble du contenu",
+    "description" : "Développement informatique, contrôle et validation du site, intégration de l'ensemble du contenu",
     "icon" : "flask"
   },
   {
-    "title" : "Tests",
+    "title" : "Recettage",
     "description" : "Tests sur environnements informatiques et navigateurs et corrections",
     "icon" : "bug"
   },
   {
     "title" : "Mise en ligne",
-    "description" : "Gestion des noms de domaines, de l'hébergement et mise en ligne du site",
+    "description" : "Gestion des noms de domaines, de l'hébergement et mise en production",
     "icon" : "rocket"
   },
   {
-    "title" : "Satistiques",
+    "title" : "Statistiques",
     "description" : "Mise en place d'un outil de statistiques accessible et consultable en temps réel",
     "icon" : "area-chart"
   },
   {
     "title" : "Support",
-    "description" : "Une question ? Un problème ? Une envie ? Je reste à votre disposition",
+    "description" : "Une question ? Un problème ? Une envie supplémentaire ? Je reste à votre disposition",
     "icon" : "life-ring"
   }
 ]

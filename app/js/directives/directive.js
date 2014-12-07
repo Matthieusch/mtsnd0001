@@ -22,4 +22,39 @@ angular.module('app.directive', [])
         $scope.date = date.getFullYear();
       }]
     };
+})
+.directive('quote', function() {
+  return {
+    restrict: 'A',
+    replace: true,
+    templateUrl: '/partials/quote.html',
+    controller: ['$scope', '$http', function ($scope, $http) {
+      // Récupératon des citations
+      $scope.quotes = [];
+      $http.get('/js/services/quotes.json').success(function(data){
+        // console.log('Success Quotes: ' + data);
+        $scope.quotes = data;
+
+        $scope.quote = $scope.quotes[Math.floor((Math.random() * $scope.quotes.length))];
+      }).
+      error(function(data, status, headers, config) {
+        console.log('Error Quotes: ' + headers);
+      });
+    }]
+  };
+})
+.directive('scroll', function () {
+  return function(scope, element, attrs) {
+    // jQuery(element).bind('scroll', function() {
+    //   console.log(this);
+    //    if (this.pageYOffset >= 100) {
+    //        scope.boolChangeClass = true;
+    //        console.log('Scrolled below header.');
+    //    } else {
+    //        scope.boolChangeClass = false;
+    //        console.log('Header is in view.');
+    //    }
+    //   scope.$apply();
+    // });
+  };
 });

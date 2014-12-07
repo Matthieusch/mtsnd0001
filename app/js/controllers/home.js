@@ -4,7 +4,7 @@ angular.module('app.controllers.home', [
   'app.home.home-directive'
 ])
 
-.controller('HomeCtrl', ['$scope', '$document', '$http', function($scope, $document, $http) {
+.controller('HomeCtrl', ['$scope', '$document', '$http', 'functions', function($scope, $document, $http, functions) {
 
   // Récupératon des informations générales
   $scope.settings = [];
@@ -12,7 +12,7 @@ angular.module('app.controllers.home', [
     // console.log('Success Settings: ' + data);
     $scope.settings = data;
 
-    $scope.settings.hobbies = shuffle($scope.settings.hobbies);
+    $scope.settings.hobbies = functions.shuffle($scope.settings.hobbies);
   }).
   error(function(data, status, headers, config) {
     console.log('Error Settings: ' + data);

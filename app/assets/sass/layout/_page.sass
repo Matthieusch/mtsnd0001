@@ -48,6 +48,31 @@ body
   padding-top: 150px
   position: relative
 
+#quote
+  background-position: center 0
+  height: 475px
+  text-align: center
+  h3
+    +rem(font-size, 40px)
+    color:  #fff
+    font-weight: 800
+    margin: 100px auto 42px
+    max-width: 1140px
+    &:after
+      background: #fff
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      margin: 20px -15px
+      position: absolute
+      width: 30px
+  h4
+    +rem(font-size, 15px)
+    background: transparent
+    color:  #fff
+    font-weight: 700
+
 #overlay
   background: rgba(black, 0.4)
   height: 400px

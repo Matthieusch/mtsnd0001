@@ -2,13 +2,13 @@
 
 angular.module('app.controllers.greatstuff', [])
 
-.controller('GreatStuffCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('GreatStuffCtrl', ['$scope', '$http', 'functions', function($scope, $http, functions) {
 
   // Récupératon des marques
   $scope.brands = [];
   $http.get('/js/services/powered-brands.json').success(function(data){
     // console.log('Success brands: ' + data);
-    $scope.brands = shuffle(data);
+    $scope.brands = functions.shuffle(data);
 
   }).
   error(function(data, status, headers, config) {

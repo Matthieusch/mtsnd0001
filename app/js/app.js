@@ -7,12 +7,13 @@ angular.module('app', [
   'snap',
   'duScroll',
   'easypiechart',
+  'app.factory',
   'app.controllers.home',
   'app.directive',
   'app.controllers.greatstuff'
 ]).
-value('duScrollEasing', invertedEasingFunction).
 run(function($rootScope, $location, $routeParams, snapRemote){
+  //Snap Function
   snapRemote.getSnapper().then(function(snapper) {
     snapper.on('close', function(){
       angular.element(document.querySelector('#snap-toggle')).removeClass('active');
@@ -37,26 +38,3 @@ config(function(snapRemoteProvider) {
     minPosition: -265
   };
 });
-
-// Functions
-function invertedEasingFunction(t) {
-  return t<0.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t;
-}
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}

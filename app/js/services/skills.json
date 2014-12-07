@@ -2,41 +2,41 @@
   {
     "name" : "PHP",
     "percent" : 72,
-    "description" : "On le concidére comme le cerveau du site internet"
+    "description" : "Nous ne sommes pas à une virgule près, si ?"
   },
   {
     "name" : "WordPress",
     "percent" : 83,
-    "description" : "Coordonne le cerveau et facilite la gestion des données"
+    "description" : "Célèbre système de gestion de contenus"
   },
   {
     "name" : "Drupal",
     "percent" : 80,
-    "description" : "Un moyen plus complet de coordonner le cerveau"
+    "description" : "Célèbre système avancé de gestion de contenus"
   },
   {
     "name" : "JavaScript",
     "percent" : 74,
-    "description" : "Les nerfs du site qui le font réagir en temps réel"
+    "description" : "Par contre là, nous sommes à la virgule près !"
   },
   {
     "name" : "AngularJS",
     "percent" : 71,
-    "description" : "Coordonne l'architecture des nerfs pour les rendre plus réactifs"
+    "description" : "Framework MVC à la mode de Google"
   },
   {
     "name" : "HTML/CSS",
     "percent" : 87,
-    "description" : "L'apparence générale du site, et la façon dont il réagit"
+    "description" : "Pas besoin de bombe pour créer des tags"
   },
   {
     "name" : "compass & Sass",
     "percent" : 85,
-    "description" : "Coordonne l'apparence ainsi que les réactions du site"
+    "description" : "Ceci n'est pas de la magie, attention les doigts"
   },
   {
     "name" : "Git",
     "percent" : 75,
-    "description" : "La mémoire du site, elle contient toutes les sauvegardes"
+    "description" : "Le Pull : pour ceux qui n'ont pas froid au yeux"
   }
 ]
