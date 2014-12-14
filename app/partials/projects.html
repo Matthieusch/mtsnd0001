@@ -1,0 +1,23 @@
+<div id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="underline-style">Travaux</h2>
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3" ng-repeat="project in projects">
+            <div class="item-content">
+              <div ng-show="project.team" class="ribbon">{{project.team}}</div>
+              <img ng-src="{{project.image}}_mini.jpg" width="100%" alt="{{project.title}} {{project.brand}}" />
+              <div class="overlay">
+                <div class="title">{{project.title}}</div>
+                <div class="brand">{{project.brand}}</div>
+                <a href="{{project.link}}" target="_blank" title="{{project.brand}} - {{project.title}}" class="icon-eye-close"></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -43,6 +43,24 @@ angular.module('app.directive', [])
     }]
   };
 })
+.directive('projects', function() {
+  return {
+    restrict: 'A',
+    replace: true,
+    templateUrl: '/partials/projects.html',
+    controller: ['$scope', '$http', 'functions', function ($scope, $http, functions) {
+      // Récupératon des citations
+      $scope.projects = [];
+      $http.get('/js/services/projects.json').success(function(data){
+        // console.log('Success Quotes: ' + data);
+        $scope.projects = functions.shuffle(data);
+      }).
+      error(function(data, status, headers, config) {
+        console.log('Error Quotes: ' + headers);
+      });
+    }]
+  };
+})
 .directive('scroll', function () {
   return function(scope, element, attrs) {
     // jQuery(element).bind('scroll', function() {

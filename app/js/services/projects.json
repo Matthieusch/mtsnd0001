@@ -1,0 +1,75 @@
+[
+  {
+    "title" : "Site Web",
+    "brand" : "Del Arte",
+    "image" : "/files/projects/delarte",
+    "team" : "Yellowcake",
+    "category" : "website",
+    "description" : "",
+    "link": "http://www.delarte.fr/"
+  },
+  {
+    "title" : "Fonginews WebApp",
+    "brand" : "Bayer",
+    "image" : "/files/projects/fonginews",
+    "team" : "Yellowcake",
+    "category" : "webapp",
+    "description" : "",
+    "link": "http://www.bayer-agri.fr/outils-services/fonginews/"
+  },
+  {
+    "title" : "Blog Femmes et Patrimoine",
+    "brand" : "Banque de Luxembourg",
+    "image" : "/files/projects/femmesetpatrimoine",
+    "team" : "nouvelleMARQUE",
+    "category" : "blog",
+    "description" : "",
+    "link": "http://www.femmesetpatrimoine.lu/femmes/"
+  },
+  {
+    "title" : "Site Web",
+    "brand" : "Bernard Julhiet",
+    "image" : "/files/projects/julhiet",
+    "team" : "nouvelleMARQUE",
+    "category" : "Site Web",
+    "description" : "",
+    "link": "http://www.julhiet.com/"
+  },
+  {
+    "title" : "Site Web",
+    "brand" : "Les demi-pixels",
+    "image" : "/files/projects/demipixels",
+    "team" : "",
+    "category" : "Site Web",
+    "description" : "",
+    "link": "http://cestquandlesdemipixels.fr"
+  },
+  {
+    "title" : "Site Web",
+    "brand" : "Matthieu Schneider",
+    "image" : "/files/projects/matthieu",
+    "team" : "",
+    "category" : "Site Web",
+    "description" : "",
+    "link": "http://www.matthieu-schneider.fr/"
+  },
+  {
+    "title" : "Site Web",
+    "brand" : "Communauté de Communes du Pays Fouesnantais",
+    "image" : "/files/projects/ccpf",
+    "team" : "Yellowcake",
+    "category" : "Site Web",
+    "description" : "",
+    "link": "http://www.cc-paysfouesnantais.fr"
+  }
+  ,
+  {
+    "title" : "Site Web",
+    "brand" : "Brest Terres Océanes",
+    "image" : "/files/projects/brest-terres-oceanes",
+    "team" : "Yellowcake",
+    "category" : "Site Web",
+    "description" : "",
+    "link": "http://www.brest-terres-oceanes.fr"
+  }
+]
