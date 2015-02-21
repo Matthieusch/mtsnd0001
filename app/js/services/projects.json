@@ -1,17 +1,17 @@
 [
   {
-    "title" : "Site Web",
+    "title" : "Site Web / Mobile",
     "brand" : "Del Arte",
-    "image" : "/files/projects/delarte",
+    "image" : "/files/projects/delarte.fr",
     "team" : "Yellowcake",
-    "category" : "website",
+    "category" : "website, mobile",
     "description" : "",
     "link": "http://www.delarte.fr/"
   },
   {
-    "title" : "Fonginews WebApp",
-    "brand" : "Bayer",
-    "image" : "/files/projects/fonginews",
+    "title" : "WebApp",
+    "brand" : "Bayer - Fonginews",
+    "image" : "/files/projects/fonginews.bayer-agri.fr",
     "team" : "Yellowcake",
     "category" : "webapp",
     "description" : "",
@@ -20,7 +20,7 @@
   {
     "title" : "Blog Femmes et Patrimoine",
     "brand" : "Banque de Luxembourg",
-    "image" : "/files/projects/femmesetpatrimoine",
+    "image" : "/files/projects/femmesetpatrimoine.lu",
     "team" : "nouvelleMARQUE",
     "category" : "blog",
     "description" : "",
@@ -28,26 +28,26 @@
   },
   {
     "title" : "Site Web",
-    "brand" : "Bernard Julhiet",
-    "image" : "/files/projects/julhiet",
-    "team" : "nouvelleMARQUE",
+    "brand" : "Happy Hours",
+    "image" : "/files/projects/happyh0urs.com",
+    "team" : "",
     "category" : "Site Web",
     "description" : "",
-    "link": "http://www.julhiet.com/"
+    "link": "http://happyh0urs.com/"
   },
   {
     "title" : "Site Web",
-    "brand" : "Les demi-pixels",
-    "image" : "/files/projects/demipixels",
+    "brand" : "C'est quand les demi-pixels ?",
+    "image" : "/files/projects/cestquandlesdemipixels.fr",
     "team" : "",
-    "category" : "Site Web",
+    "category" : "website, responsive",
     "description" : "",
     "link": "http://cestquandlesdemipixels.fr"
   },
   {
     "title" : "Site Web",
     "brand" : "Matthieu Schneider",
-    "image" : "/files/projects/matthieu",
+    "image" : "/files/projects/matthieu-schneider.fr",
     "team" : "",
     "category" : "Site Web",
     "description" : "",
@@ -56,7 +56,7 @@
   {
     "title" : "Site Web",
     "brand" : "Communauté de Communes du Pays Fouesnantais",
-    "image" : "/files/projects/ccpf",
+    "image" : "/files/projects/cc-paysfouesnantais.fr",
     "team" : "Yellowcake",
     "category" : "Site Web",
     "description" : "",
@@ -64,9 +64,9 @@
   }
   ,
   {
-    "title" : "Site Web",
+    "title" : "Site Web / Mobile",
     "brand" : "Brest Terres Océanes",
-    "image" : "/files/projects/brest-terres-oceanes",
+    "image" : "/files/projects/brest-terres-oceanes.fr",
     "team" : "Yellowcake",
     "category" : "Site Web",
     "description" : "",
