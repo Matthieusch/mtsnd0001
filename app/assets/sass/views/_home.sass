@@ -86,6 +86,12 @@
 
 #informations
   overflow: hidden
+  span
+    vertical-align: top
+  address
+    +rem(line-height, 24px)
+    display: inline-block
+    margin-top: -3px
 
 #resume
   padding: 150px 0
@@ -193,6 +199,37 @@
     p
       margin: 0
 
+#hireme
+  background-position: center 0
+  height: 475px
+  text-align: center
+  .row
+    background: url("/assets/img/overlay-motif.png") repeat 0 0
+    height: 475px
+  h3
+    +rem(font-size, 40px)
+    color:  #fff
+    font-weight: 800
+    margin: 100px auto 42px
+    max-width: 1140px
+  h4
+    +rem(font-size, 15px)
+    background: transparent
+    color:  #fff
+    font-weight: 700
+  a
+    +border-radius(5px)
+    +rem(font-size, 15px)
+    +single-transition(background, 0.5s)
+    background: map-get($colors, red)
+    color:  #fff
+    font-weight: 800
+    padding: 20px 50px
+    text-transform: uppercase
+    &:hover, &:focus
+      background: map-get($colors, green)
+      text-decoration: none
+
 #skills
   padding: 150px 0 115px
   text-align: center
@@ -212,11 +249,15 @@
 
 #map
   height: 470px
-  overflow: hidden
   position: relative
-  width: 100%
-  iframe
-    left: 50%
-    margin-left: -2500px
+  #map-canvas
+    height: 470px
     position: absolute
     top: 0
+    width: 100%
+  #map-content
+    width: 250px
+    overflow: hidden
+    img
+      float: left
+      margin-right: 15px

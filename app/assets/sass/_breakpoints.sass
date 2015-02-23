@@ -5,7 +5,8 @@
     +rem(font-size, 70px)
   h2.underline-style
     +rem(font-size, 60px)
-  #quote h3
+  #quote h3,
+  #hireme h3
     margin-top: 170px
   #picture img
     margin-top: 30%
@@ -63,13 +64,24 @@
   .bloc-container
     .bloc
       min-height: 400px
+  #contact
+    .item
+      padding-bottom: 30px
+    .item-content
+      text-align: left
+      &:before
+        float: left
+        margin: 0 25px 45px 0
+    h3
+      margin-bottom: 25px
 
 // Medium screen / desktop : > 992px
 // ==================================================
 +breakpoint($screen-md-min)
   h1
     +rem(font-size, 90px)
-  #quote h3
+  #quote h3,
+  #hireme h3
     +rem(font-size, 50px)
     margin-top: 200px
   #picture img

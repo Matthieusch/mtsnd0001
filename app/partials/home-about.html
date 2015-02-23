@@ -17,16 +17,16 @@
             <div class="col-xs-8">: {{settings.author.birthday}}</div>
           </div>
           <div class="row">
-            <div class="col-xs-4 mb-20"><b>Téléphone</b></div>
-            <div class="col-xs-8">: {{settings.author.phone}}</div>
+            <div class="col-xs-4"><b>Adresse</b></div>
+            <div class="col-xs-8"><span>: </span><address class="mb-20">{{settings.author.address1}}<br />{{settings.author.name}}<br />{{settings.author.address2}}<br />{{settings.author.zipcode}} {{settings.author.city}}</address></div>
           </div>
           <div class="row">
             <div class="col-xs-4 mb-20"><b>Email</b></div>
             <div class="col-xs-8">: <a href="mailto:{{settings.author.email}}">{{settings.author.email}}</a></div>
           </div>
           <div class="row">
-            <div class="col-xs-4"><b>Adresse</b></div>
-            <div class="col-xs-8">: {{settings.author.address}}</div>
+            <div class="col-xs-4 mb-20"><b>Téléphone</b></div>
+            <div class="col-xs-8">: <a href="tel:{{settings.author.phone}}">{{settings.author.phone}}</a></div>
           </div>
         </div>
         <h5>{{settings.author.name}}</h5>
@@ -34,10 +34,10 @@
           <span class="icon-download-alt">Curriculum Vitae</span>
         </a>
       </div>
-      <div id="hobbies" class="col-xs-12 col-lg-8 clearfix visible-md-block mt-20">
+      <div id="hobbies" class="col-xs-12 col-lg-8 mt-20">
         <h3>Loisirs et intérêts</h3>
         <div class="row">
-          <div class="col-xs-4 col-sm-3" ng-repeat="hobby in settings.hobbies">
+          <div class="col-xs-6 col-sm-3" ng-repeat="hobby in settings.hobbies">
             <div class="square">
               <div class="content">
                 <div class="table">

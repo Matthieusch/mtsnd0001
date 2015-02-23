@@ -9,7 +9,10 @@
     "birthday": "27/02/1988",
     "phone": "+33 6 45 79 09 99",
     "email": "matthieu.snd@gmail.com",
-    "address": "Rennes - FRANCE"
+    "address1": "Happy Hours",
+    "address2": "22 Quai Duguay Trouin",
+    "zipcode": "35000",
+    "city": "RENNES"
   },
   "profiles" : [
     {
@@ -47,8 +50,8 @@
       "name": "Mac OS"
     },
     {
-      "id": "rocket",
-      "name": "Astronomie"
+      "id": "camera",
+      "name": "Photographie"
     },
     {
       "id": "beer",

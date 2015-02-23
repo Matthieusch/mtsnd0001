@@ -126,8 +126,43 @@ body
       margin-top: 20px
       &:hover, &:focus, &:active
         text-decoration: none
-        &:before
-          content: "\f06e"
+
+#contact
+  background: #fff
+  padding: 150px 0 120px
+  .item
+    padding-bottom: 60px
+  .item-content
+    display: block
+    overflow: hidden
+    text-align: center
+    &:before
+      +border-radius(5px)
+      +rem(font-size, 40px)
+      background: #e74c3c
+      color: #fff
+      display: block
+      height: 80px
+      line-height: 80px
+      margin: 0 auto 20px
+      text-align: center
+      width: 80px
+    &.address:before
+      background: map-get($colors, green)
+    &.email:before
+      background: map-get($colors, purple)
+    &.mobile:before
+      background: map-get($colors, cyan)
+    &.email a
+      color: map-get($colors, purple)
+    &.mobile a
+      color: map-get($colors, cyan)
+  h3
+    color: map-get($colors, blue)
+    margin-bottom: 15px
+  address
+    +rem(line-height, 24px)
+
 
 
 #overlay

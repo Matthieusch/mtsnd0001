@@ -1,0 +1,70 @@
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="underline-style">Contact</h2>
+      </div>
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="item-content icon-map-marker address">
+              <h3>Adresse</h3>
+              <address>
+                {{settings.author.address1}}<br />
+                {{settings.author.name}}<br />
+                {{settings.author.address2}}<br />
+                {{settings.author.zipcode}} {{settings.author.city}}
+              </address>
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-md-4">
+            <div class="item-content icon-envelop email">
+              <h3>Email</h3>
+              <a href="mailto:{{settings.author.email}}" title="Envoyer un mail à Matthieu ?">{{settings.author.email}}</a>
+            </div>
+          </div>
+          <div class="clearfix visible-sm-block"></div>
+          <div class="item col-xs-12 col-xs-6 col-md-4">
+            <div class="item-content icon-mobile mobile">
+              <h3>Téléphone</h3>
+              <a href="tel:{{settings.author.phone}}" title="Un coup de fil ?">{{settings.author.phone}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <!--
+      <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form">
+        <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+          <div class="col-md-6 col-xs-12">
+            <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Nom" required>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+          <div class="col-md-6 col-xs-12">
+            <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+          <div class="col-xs-12">
+            <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Sujet" required>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+          <div class="col-xs-12">
+            <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+      -->
+    </div>
+  </div>
+</div>

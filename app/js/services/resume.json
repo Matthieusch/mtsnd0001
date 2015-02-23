@@ -1,9 +1,19 @@
 {
   "experiences" : [
     {
-      "name": "Front-End Web Developper",
+      "name": "Front-End Web Developer",
+      "employer": "Freelance",
+      "dates": "2015 - Aujourd'hui",
+      "functions": [
+        "Développements et intégration de sites web : desktop, mobile ou responsive sur les CMS : Drupal ou WordPress",
+        "Développements d’applications web pour terminaux mobiles",
+        "Développements de newsletters responsives"
+      ]
+    },
+    {
+      "name": "Front-End Web Developer",
       "employer": "Yellowcake",
-      "dates": "2012 - Aujourd'hui",
+      "dates": "2012 - 2015",
       "functions": [
         "Développements et intégration de sites web : desktop, mobile ou responsive",
         "Développements d’applications web pour terminaux mobiles",
@@ -11,7 +21,7 @@
       ]
     },
     {
-      "name": "Front-End Web Developper",
+      "name": "Intégrateur Web",
       "employer": "nouvelle MARQUE",
       "dates": "2010 - 2012",
       "functions": [
@@ -22,7 +32,7 @@
     {
       "name": "Intégrateur / Concepteur e-learning",
       "employer": "NetOpen",
-      "dates": "2009 - 2009",
+      "dates": "2009 - 2010",
       "functions": [
         "Intégration de contenus e-learning sur une plateforme propriétaire"
       ]
@@ -30,7 +40,7 @@
     {
       "name": "Enseignant vacataire",
       "employer": "UTT",
-      "dates": "2009 - 2009",
+      "dates": "2009 - 2010",
       "functions": [
         "Formation des étudiants à l’UV : multimédia, du projet à la réalisation"
       ]
