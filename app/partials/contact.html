@@ -34,11 +34,10 @@
       </div>
     </div>
     <div class="row">
-    <!--
       <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form">
         <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
           <div class="col-md-6 col-xs-12">
-            <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Nom" required>
+            <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Nom">
           </div>
         </div>
         <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
@@ -53,18 +52,20 @@
         </div>
         <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
           <div class="col-xs-12">
-            <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+            <textarea ng-model="formData.inputMessage" class="form-control" rows="8" id="inputMessage" name="inputMessage" placeholder="Hello !" required></textarea>
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-offset-2 col-lg-10">
+          <div class="col-xs-12">
             <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled">
-              Send Message
+              <span class="icon-paper-plane">Envoyer !</span>
             </button>
           </div>
         </div>
       </form>
-      -->
+      <div class="col-xs-12">
+        <p class="col-xs-12" ng-class="result">{{ resultMessage }}</p>
+      </div>
     </div>
   </div>
 </div>

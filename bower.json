@@ -15,7 +15,8 @@
     "angular-animate": "~1.2.x",
     "angular-snap": "~1.6.0",
     "angular-scroll": "~0.6.2",
-    "jquery.easy-pie-chart": "~2.1.4"
+    "jquery.easy-pie-chart": "~2.1.4",
+    "wow": "~1.0.3"
   },
   "authors": [
     "Matthieu Schneider matthieu.snd@gmail.com"
