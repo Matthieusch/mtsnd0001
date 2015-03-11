@@ -23,6 +23,25 @@ angular.module('app.home.home-directive', [])
     templateUrl: 'partials/home-resume.html'
   };
 })
+.directive('recommandations', function() {
+  return {
+    restrict: 'A',
+    replace: true,
+    templateUrl: 'partials/home-recommandations.html',
+    controller: ['$scope', '$http', function ($scope, $http) {
+      // Récupératon des recommandations
+      $scope.recommandations = [];
+      $http.get('/js/services/recommandations.json').success(function(data){
+        // console.log('Success brands: ' + data);
+        $scope.recommandations = data;
+
+      }).
+      error(function(data, status, headers, config) {
+        console.log('Error brands: ' + data);
+      });
+    }]
+  };
+})
 .directive('services', function() {
   return {
     restrict: 'A',

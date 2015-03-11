@@ -171,6 +171,34 @@
     .items-container span + span:before
       background: map-get($colors, green)
 
+#recommandations
+  background: url("http://lorempixel.com/g/1770/800/nightlife/") no-repeat center 0
+  +background-size(cover)
+  & > .row
+    background: url("/assets/img/overlay-motif.png") repeat 0 0
+    padding: 150px 0
+  h2
+    +rem(font-size, 33px)
+    color: #fff
+    &:after
+      background-color: #fff
+  h3,
+  h4,
+  p
+    text-align: left
+  h3
+    +rem(font-size, 15px)
+    +rem(line-height, 20px)
+    text-align: center
+    span
+      display: block
+      font-weight: 600
+      text-transform: initial
+  .profil-picture
+    +border-radius(100px)
+    margin-top: 20px
+    overflow: hidden
+
 #services
   background: #fff
   padding: 150px 0
@@ -200,9 +228,10 @@
       margin: 0
 
 #hireme
-  background-position: center 0
+  background: url("http://lorempixel.com/g/1770/475/cats/") no-repeat center 0
   height: 475px
   text-align: center
+  +background-size(cover)
   .row
     background: url("/assets/img/overlay-motif.png") repeat 0 0
     height: 475px

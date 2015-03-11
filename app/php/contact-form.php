@@ -12,21 +12,19 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['i
 
     //create an instance of PHPMailer
     $mail = new PHPMailer();
-
+    $mail->CharSet = 'UTF-8';
     $mail->From = $_POST['inputEmail'];
     $mail->FromName = $_POST['inputName'];
     $mail->AddAddress('matthieu.snd@gmail.com'); //recipient
     $mail->Subject = $_POST['inputSubject'];
     $mail->Body = "Nom : " . $_POST['inputName'] . "\r\n\r\nMessage : " . stripslashes($_POST['inputMessage']);
 
-    if (isset($_POST['ref'])) {
-        $mail->Body .= "\r\n\r\nRef: " . $_POST['ref'];
-    }
-
-    if(!$mail->send()) {
-        $data = array('success' => false, 'message' => 'Le message n\'a pu être envoyé. Erreur : ' . $mail->ErrorInfo);
-        echo json_encode($data);
-        exit;
+    if(!isset($_POST['inputUrl'])){
+      if(!$mail->send()) {
+          $data = array('success' => false, 'message' => 'Le message n\'a pu être envoyé. Erreur : ' . $mail->ErrorInfo);
+          echo json_encode($data);
+          exit;
+      }
     }
 
     $data = array('success' => true, 'message' => 'Le message a bien été envoyé. Merci !');
