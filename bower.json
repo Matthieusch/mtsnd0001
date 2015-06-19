@@ -16,7 +16,8 @@
     "angular-snap": "~1.6.0",
     "angular-scroll": "~0.6.2",
     "jquery.easy-pie-chart": "~2.1.4",
-    "wow": "~1.0.3"
+    "oridomi": "~1.1.5",
+    "animate.css": "~3.2.3"
   },
   "authors": [
     "Matthieu Schneider matthieu.snd@gmail.com"

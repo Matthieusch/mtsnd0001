@@ -4,7 +4,7 @@ angular.module('app.controllers.home', [
   'app.home.home-directive'
 ])
 
-.controller('HomeCtrl', ['$scope', '$document', '$http', 'functions', function($scope, $document, $http, functions) {
+.controller('HomeCtrl', ['$scope', '$http', 'functions', function($scope, $http, functions) {
 
   // Récupératon des informations générales
   $scope.settings = [];
@@ -40,6 +40,17 @@ angular.module('app.controllers.home', [
     console.log('Error Resume: ' + headers);
   });
 
+  // Récupératon des recommandations
+  $scope.recommandations = [];
+  $http.get('/js/services/recommandations.json').success(function(data){
+    // console.log('Success brands: ' + data);
+    $scope.recommandations = data;
+
+  }).
+  error(function(data, status, headers, config) {
+    console.log('Error brands: ' + data);
+  });
+
   // Récupératon des services
   $scope.services = [];
   $http.get('/js/services/my-services.json').success(function(data){
@@ -72,5 +83,9 @@ angular.module('app.controllers.home', [
   error(function(data, status, headers, config) {
     console.log('Error skills: ' + data);
   });
-
-}]);
+}])
+.controller('LoopWatchCtrl', function($scope) {
+  $scope.$watch('$last', function(newVal, oldVal) {
+    newVal && $scope.$emit('$repeatFinished', $scope.$index);
+  });
+});

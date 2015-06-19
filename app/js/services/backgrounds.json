@@ -1,7 +1,6 @@
 {
   "images": [
     {"src": "/files/backgrounds/background-1.jpg"},
-    {"src": "/files/backgrounds/background-2.jpg"},
-    {"src": "/files/backgrounds/background-3.jpg"}
+    {"src": "/files/backgrounds/background-2.jpg"}
   ]
 }

@@ -1,6 +1,6 @@
 [
   {
-    "title" : "Site Web / Mobile",
+    "title" : "Site web / Mobile",
     "brand" : "Del Arte",
     "image" : "/files/projects/delarte.fr",
     "team" : "Yellowcake",
@@ -18,25 +18,25 @@
     "link": "http://www.bayer-agri.fr/outils-services/fonginews/"
   },
   {
-    "title" : "Blog Femmes et Patrimoine",
-    "brand" : "Banque de Luxembourg",
-    "image" : "/files/projects/femmesetpatrimoine.lu",
-    "team" : "nouvelleMARQUE",
-    "category" : "blog",
+    "title" : "Site web",
+    "brand" : "École de Running Française",
+    "image" : "/files/projects/ecolederunningfrancaise.com",
+    "team" : "",
+    "category" : "website, responsive",
     "description" : "",
-    "link": "http://www.femmesetpatrimoine.lu/femmes/"
+    "link": "https://ecolederunningfrancaise.com"
   },
   {
-    "title" : "Site Web",
+    "title" : "Site web",
     "brand" : "Happy Hours",
     "image" : "/files/projects/happyh0urs.com",
     "team" : "",
-    "category" : "Site Web",
+    "category" : "Site web",
     "description" : "",
     "link": "http://happyh0urs.com/"
   },
   {
-    "title" : "Site Web",
+    "title" : "Site web",
     "brand" : "C'est quand les demi-pixels ?",
     "image" : "/files/projects/cestquandlesdemipixels.fr",
     "team" : "",
@@ -45,30 +45,30 @@
     "link": "http://cestquandlesdemipixels.fr"
   },
   {
-    "title" : "Site Web",
+    "title" : "Site web",
     "brand" : "Matthieu Schneider",
     "image" : "/files/projects/matthieu-schneider.fr",
     "team" : "",
-    "category" : "Site Web",
+    "category" : "Site web",
     "description" : "",
     "link": "http://www.matthieu-schneider.fr/"
   },
   {
-    "title" : "Site Web",
+    "title" : "Site web",
     "brand" : "Communauté de Communes du Pays Fouesnantais",
     "image" : "/files/projects/cc-paysfouesnantais.fr",
     "team" : "Yellowcake",
-    "category" : "Site Web",
+    "category" : "Site web",
     "description" : "",
     "link": "http://www.cc-paysfouesnantais.fr"
   }
   ,
   {
-    "title" : "Site Web / Mobile",
+    "title" : "Site web / Mobile",
     "brand" : "Brest Terres Océanes",
     "image" : "/files/projects/brest-terres-oceanes.fr",
     "team" : "Yellowcake",
-    "category" : "Site Web",
+    "category" : "Site web",
     "description" : "",
     "link": "http://www.brest-terres-oceanes.fr"
   }

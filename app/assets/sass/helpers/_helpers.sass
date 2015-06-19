@@ -8,6 +8,7 @@
 @mixin single-transition($property, $duration)
   +transition-property($property)
   +transition-duration($duration)
+  +transition-timing-function(ease)
 
 // Class
 // ==================================================
@@ -72,12 +73,15 @@
     display: block
     line-height: 1em
     margin: 15px 0
-    padding: 30px 20px
+    overflow: hidden
+    position: relative
     text-decoration: none
     &:hover, &:focus, &:active
       text-decoration: none
+    .content
+      padding: 20px
     img
-      +border-radius(5px)
+      +border-radius(5px 5px 0 0)
     h3
       color: map-get($colors, blue)
       font-size: 22px

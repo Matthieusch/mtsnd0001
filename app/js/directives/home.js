@@ -23,25 +23,41 @@ angular.module('app.home.home-directive', [])
     templateUrl: 'partials/home-resume.html'
   };
 })
-.directive('recommandations', function() {
+.directive('recommandations', ['$timeout', function($timeout) {
   return {
     restrict: 'A',
     replace: true,
-    templateUrl: 'partials/home-recommandations.html',
-    controller: ['$scope', '$http', function ($scope, $http) {
-      // Récupératon des recommandations
-      $scope.recommandations = [];
-      $http.get('/js/services/recommandations.json').success(function(data){
-        // console.log('Success brands: ' + data);
-        $scope.recommandations = data;
-
-      }).
-      error(function(data, status, headers, config) {
-        console.log('Error brands: ' + data);
-      });
-    }]
+    templateUrl: 'partials/home-recommandations.html'
   };
-})
+}])
+.directive('blkrecommandations', ['$parse', '$rootScope', '$timeout', function($parse, $rootScope, $timeout) {
+    return {
+      restict: 'AE',
+      link: function(scope, element, attrs) {
+        var loadCount = 0,
+            lastIndex = 0;
+
+        scope.$on('$repeatFinished', function(event, data) {
+          lastIndex = data;
+          var oriDomiParams = {
+            hPanels: 4,
+            ripple: true
+          };
+          $timeout(function() {
+            // var $folded = $('.bloc').oriDomi(oriDomiParams);
+            // $folded.oriDomi('accordion', 60, 'top');
+            // var folded = $folded.oriDomi(true);
+            $('.click').bind('click', function() {
+              $(this).removeClass('infinite').addClass('bounceOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $(this).fadeOut();
+                $(this).next().find('.text').addClass('animated fadeInLeft');
+              })
+            });
+          });
+        });
+      }
+    }
+}])
 .directive('services', function() {
   return {
     restrict: 'A',
