@@ -1,0 +1,22 @@
+[
+  {
+    "author" : "Steve Jobs",
+    "text" : "Stay Hungry. Stay Foolish.",
+    "image" : "/files/quotes/steve-jobs.jpg"
+  },
+  {
+    "author" : "Dieter Rams",
+    "text" : "Good design is as little design as possible.",
+    "image" : "/files/quotes/dieter-rams.jpg"
+  },
+  {
+    "author" : "Dita Von Teese",
+    "text" : "I like having my cellphone. I like the Internet. I like being different.",
+    "image" : "/files/quotes/dita-von-teese.jpg"
+  },
+  {
+    "author" : "J. K. Rowling",
+    "text" : "The internet has been a boon and a curse for teenagers.",
+    "image" : "/files/quotes/j-k-rowling.jpg"
+  }
+]

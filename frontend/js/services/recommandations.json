@@ -1,0 +1,40 @@
+[
+  {
+    "enterprise" : "NetOpen",
+    "logo" : "/files/recommandations/netopen.jpg",
+    "name" : "Didier Mirey",
+    "role" : "Directeur",
+    "image" : "/files/recommandations/didier.jpg",
+    "date" : "2009",
+    "text" : [
+      "Nous avons eu l'occasion, au sein de Netopen, d'apprécier la motivation, la disponibilité et l'entrain de Matthieu qui déborde d'énergie.",
+      "La conjoncture économique à l'époque où Matthieu était présent dans notre entreprise ne nous a pas permis de lui offrir le poste qu'il espérait et depuis, son changement de région nous en a privé « définitivement »."
+    ],
+    "link" : "http://www.netopen.fr/"
+  },
+  {
+    "enterprise" : "nouvelle MARQUE",
+    "logo" : "/files/recommandations/nouvelle-marque.jpg",
+    "name" : "Jean-Michel MESSIN",
+    "role" : "Directeur conseil",
+    "image" : "/files/recommandations/jean-michel.jpg",
+    "date" : "2012",
+    "text" : [
+      "Au-delà de ses compétences, sans cesses grandissantes, d'intégrateur Web, Matthieu a l'étoffe d'un chef de projet digital à qui vous pourrez confier vos projets les plus précieux.",
+      "Nous aurions aimé le voir grandir chez nouvelle MARQUE."
+    ],
+    "link" : "http://nouvelle-marque.com/"
+  },
+  {
+    "enterprise" : "Yellowcake",
+    "logo" : "/files/recommandations/yellowcake.jpg",
+    "name" : "Julien Sévellec",
+    "role" : "Directeur",
+    "image" : "/files/recommandations/julien-sevellec.jpg",
+    "date" : "2015",
+    "text" : [
+      "À venir..."
+    ],
+    "link" : "http://www.yellowcake.net/"
+  }
+]

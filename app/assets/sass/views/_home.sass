@@ -10,9 +10,9 @@
   #logo
     height: 150px
     margin: 0 auto 70px
+    overflow: hidden
     width: 150px
-    img
-      +border-radius(5px)
+    +border-radius(75px)
   h1,
   h2
     color: #fff
@@ -121,12 +121,14 @@
       position: absolute
       text-decoration: inherit
       width: 40px
+  #entrepreneurials,
   #experiences,
   #education
     position: relative
     z-index: 4
   .icon-folder-open,
-  .icon-book
+  .icon-book,
+  .icon-cogs
     position: relative
     z-index: 4
     &:before
@@ -142,6 +144,8 @@
       text-align: center
   .icon-book:before
     background: map-get($colors, green)
+  .icon-cogs:before
+    background: map-get($colors, cyan)
   .items-container
     span
       +rem(font-size, 18px)
@@ -170,6 +174,22 @@
   #education
     .items-container span + span:before
       background: map-get($colors, green)
+  #entrepreneurials
+    a
+      display: inline-block
+      color: map-get($colors, cyan)
+      font-weight: 600
+      margin-top: 15px
+    .items-container span
+      font-weight: 400
+      line-height: 27px
+      & + span
+        display: block
+        font-style: normal
+        font-weight: 600
+        line-height: 18px
+        &:before
+          content: none
 
 #recommandations
   background: url("http://lorempixel.com/g/1770/800/nightlife/") no-repeat center 0

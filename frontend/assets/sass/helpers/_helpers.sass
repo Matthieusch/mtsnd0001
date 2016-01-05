@@ -1,0 +1,97 @@
+// ==================================================
+// Class & placeholders helpers
+// ==================================================
+
+// Class
+// ==================================================
+
+@mixin single-transition($property, $duration)
+  +transition-property($property)
+  +transition-duration($duration)
+  +transition-timing-function(ease)
+
+// Class
+// ==================================================
+
+.align-center
+  margin-left: auto
+  margin-right: auto
+
+.align-left
+  float: left
+
+.align-right
+  float: right
+
+.clear-both
+  clear: both
+
+.element-invisible
+  display: none !important
+
+.hide-text
+  +hide-text
+
+.highlighted
+  color: map-get($colors, primary) !important
+
+.text-center
+  text-align: center
+
+.text-justify
+  text-align: justify
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-underline
+  text-decoration: underline
+
+.mt-20
+  margin-top: 20px
+
+.mb-10
+  margin-bottom: 10px
+
+.mb-20
+  margin-bottom: 20px
+
+.lightblue
+  background: map-get($colors, lightblue)
+
+.nopadding
+  padding: 0 !important
+  margin: 0 !important
+
+.bloc-container
+  .bloc
+    +border-radius(5px)
+    background: #fff
+    display: block
+    line-height: 1em
+    margin: 15px 0
+    overflow: hidden
+    position: relative
+    text-decoration: none
+    &:hover, &:focus, &:active
+      text-decoration: none
+    .content
+      padding: 20px
+    img
+      +border-radius(5px 5px 0 0)
+    h3
+      color: map-get($colors, blue)
+      font-size: 22px
+      font-weight: 800
+      margin: 25px 0 15px
+    p
+      margin-bottom: 0
+
+// Placeholders
+// ==================================================
+
+%force-hardware-acceleration
+  -webkit-transform: translateZ(0)

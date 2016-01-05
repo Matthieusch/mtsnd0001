@@ -1,0 +1,42 @@
+[
+  {
+    "name" : "PHP",
+    "percent" : 75,
+    "description" : "Nous ne sommes pas à une virgule près, si ?"
+  },
+  {
+    "name" : "WordPress",
+    "percent" : 80,
+    "description" : "Célèbre système de gestion de contenus"
+  },
+  {
+    "name" : "Drupal",
+    "percent" : 90,
+    "description" : "Célèbre système avancé de gestion de contenus"
+  },
+  {
+    "name" : "JavaScript",
+    "percent" : 75,
+    "description" : "Par contre là, nous sommes à la virgule près !"
+  },
+  {
+    "name" : "AngularJS",
+    "percent" : 70,
+    "description" : "Framework MVC à la mode de Google"
+  },
+  {
+    "name" : "HTML/CSS",
+    "percent" : 95,
+    "description" : "Pas besoin de bombe pour créer des tags"
+  },
+  {
+    "name" : "compass & Sass",
+    "percent" : 90,
+    "description" : "Ceci n'est pas de la magie, attention les doigts"
+  },
+  {
+    "name" : "Git",
+    "percent" : 80,
+    "description" : "Le Pull : pour ceux qui n'ont pas froid au yeux"
+  }
+]

@@ -6,6 +6,26 @@
       </div>
       <div class="col-xs-12">
         <div id="line"></div>
+        <div id="entrepreneurials" class="row">
+          <div class="text-center">
+            <h4>Entrepreneurial</h4>
+          </div>
+          <div class="icon-cogs"></div>
+          <div class="items-container col-md-10 col-md-offset-1">
+            <div class="item col-sm-6" ng-repeat="entrepreneurial in resume.entrepreneurials">
+              <div class="row">
+                <div class="item-content col-xs-12">
+                  <h6>{{entrepreneurial.name}}</h6>
+                  <span ng-show="entrepreneurial.allies.length">{{entrepreneurial.allies}}</span><span>{{entrepreneurial.dates}}</span>
+                  <ul>
+                    <li ng-repeat="description in entrepreneurial.descriptions">{{description}}</li>
+                  </ul>
+                  <a ng-show="entrepreneurial.link.length" href="http://{{entrepreneurial.link}}/">{{entrepreneurial.link}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="experiences" class="row">
           <div class="text-center">
             <h4>Expériences</h4>
