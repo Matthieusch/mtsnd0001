@@ -1,14 +1,5 @@
 [
   {
-    "title" : "Site web",
-    "brand" : "Fuzzie",
-    "image" : "/files/projects/fuzzie.com.sg",
-    "team" : "",
-    "category" : "website",
-    "description" : "",
-    "link": "http://fuzzie.com.sg/"
-  },
-  {
     "title" : "WebApp",
     "brand" : "Bayer - Fonginews",
     "image" : "/files/projects/fonginews.bayer-agri.fr",
@@ -48,28 +39,27 @@
     "title" : "Site web",
     "brand" : "Avoxa CPI",
     "image" : "/files/projects/avoxa-ip.com",
-    "team" : "Nouveau !",
+    "team" : "",
     "category" : "Site web",
     "description" : "",
     "link": "http://avoxa-ip.com/"
   },
   {
-    "title" : "Site web",
-    "brand" : "Communauté de Communes du Pays Fouesnantais",
-    "image" : "/files/projects/cc-paysfouesnantais.fr",
-    "team" : "Yellowcake",
+    "title" : "Boutique",
+    "brand" : "Absolution Cosmetics",
+    "image" : "/files/projects/absolution-cosmetics.com",
+    "team" : "LunaWeb",
     "category" : "Site web",
     "description" : "",
-    "link": "http://www.cc-paysfouesnantais.fr"
-  }
-  ,
+    "link": "http://www.absolution-cosmetics.com/"
+  },
   {
-    "title" : "Site web / Mobile",
-    "brand" : "Brest Terres Océanes",
-    "image" : "/files/projects/brest-terres-oceanes.fr",
-    "team" : "Yellowcake",
+    "title" : "Site web",
+    "brand" : "La Place Gourmande",
+    "image" : "/files/projects/laplacegourmande.fr",
+    "team" : "Nouveau !",
     "category" : "Site web",
     "description" : "",
-    "link": "http://www.brest-terres-oceanes.fr"
+    "link": "http://laplacegourmande.fr/"
   }
 ]
