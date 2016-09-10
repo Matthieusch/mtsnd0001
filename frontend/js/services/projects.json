@@ -1,12 +1,39 @@
 [
   {
-    "title" : "WebApp",
-    "brand" : "Bayer - Fonginews",
-    "image" : "/files/projects/fonginews.bayer-agri.fr",
-    "team" : "Yellowcake",
-    "category" : "webapp",
+    "title" : "Site web",
+    "brand" : "Format Bois",
+    "image" : "/files/projects/formatbois.fr",
+    "team" : "Nouveau !",
+    "category" : "Site web",
     "description" : "",
-    "link": "http://www.bayer-agri.fr/outils-services/fonginews/"
+    "link": "http://formatbois.fr/"
+  },
+  {
+    "title" : "Site web",
+    "brand" : "La Place Gourmande",
+    "image" : "/files/projects/laplacegourmande.fr",
+    "team" : "",
+    "category" : "Site web",
+    "description" : "",
+    "link": "http://laplacegourmande.fr/"
+  },
+  {
+    "title" : "Boutique",
+    "brand" : "Absolution Cosmetics",
+    "image" : "/files/projects/absolution-cosmetics.com",
+    "team" : "LunaWeb",
+    "category" : "Site web",
+    "description" : "",
+    "link": "http://www.absolution-cosmetics.com/"
+  },
+  {
+    "title" : "Site web",
+    "brand" : "Avoxa CPI",
+    "image" : "/files/projects/avoxa-ip.com",
+    "team" : "",
+    "category" : "Site web",
+    "description" : "",
+    "link": "http://avoxa-ip.com/"
   },
   {
     "title" : "Site web",
@@ -36,30 +63,12 @@
     "link": "http://cestquandlesdemipixels.fr"
   },
   {
-    "title" : "Site web",
-    "brand" : "Avoxa CPI",
-    "image" : "/files/projects/avoxa-ip.com",
-    "team" : "",
-    "category" : "Site web",
+    "title" : "WebApp",
+    "brand" : "Bayer - Fonginews",
+    "image" : "/files/projects/fonginews.bayer-agri.fr",
+    "team" : "Yellowcake",
+    "category" : "webapp",
     "description" : "",
-    "link": "http://avoxa-ip.com/"
-  },
-  {
-    "title" : "Boutique",
-    "brand" : "Absolution Cosmetics",
-    "image" : "/files/projects/absolution-cosmetics.com",
-    "team" : "LunaWeb",
-    "category" : "Site web",
-    "description" : "",
-    "link": "http://www.absolution-cosmetics.com/"
-  },
-  {
-    "title" : "Site web",
-    "brand" : "La Place Gourmande",
-    "image" : "/files/projects/laplacegourmande.fr",
-    "team" : "Nouveau !",
-    "category" : "Site web",
-    "description" : "",
-    "link": "http://laplacegourmande.fr/"
+    "link": "http://www.bayer-agri.fr/outils-services/fonginews/"
   }
 ]

@@ -1,6 +1,7 @@
 {
   "images": [
-    {"src": "/files/backgrounds/background-1.jpg"},
-    {"src": "/files/backgrounds/background-2.jpg"}
+    {"src": "/files/projects/formatbois.fr_full.jpg"},
+    {"src": "/files/projects/laplacegourmande.fr_full.jpg"},
+    {"src": "/files/projects/avoxa-ip.com_full.jpg"}
   ]
 }

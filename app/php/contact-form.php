@@ -13,7 +13,7 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['i
     //create an instance of PHPMailer
     $mail = new PHPMailer();
     $mail->CharSet = 'UTF-8';
-    $mail->From = $_POST['inputEmail'];
+    $mail->From = 'contact@matthieu-schneider.fr';
     $mail->FromName = $_POST['inputName'];
     $mail->AddAddress('matthieu.snd@gmail.com'); //recipient
     $mail->Subject = $_POST['inputSubject'];
